@@ -1,0 +1,7 @@
+RewriteEngine On
+Options All -Indexes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /structure_pattern/index.php?url=$1 [QSA,L]
+#RewriteRule ^(.*)$ /index.php?url=$1 [QSA,L]
+
